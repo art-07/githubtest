@@ -26,13 +26,18 @@
 	<header>
 		<div class="test"></div>
 	</header>
+	<article>
+		<section>
+			
+		</section>
+	</article>
 	<footer>
 		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
 		</ul>
 	</footer>
 </div>
