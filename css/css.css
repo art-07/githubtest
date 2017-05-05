@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body { font-family: "Open Sans", "微軟正黑體", Verdana, Geneva, sans-serif; color: #070707; background-color: #fff; line-height: 24px; font-size: 18px; position: relative; -webkit-text-size-adjust: none; }
+
+a { color: #070707; text-decoration: none; }
+a:hover { color: #3b6a1b; text-decoration: none; }
+
+.hide { display: none; }
+
+.clean { clear: both; line-height: 0; height: 0; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.wrapper { width: 100%; max-width: 1200px; margin: 0 auto; position: relative; }
+
+.red { color: #e60012; }
+
+.green { color: #008d03; }
+
+.edit { padding: 20px 15px; }
+.edit img, .edit iframe { max-width: 100%; height: auto; }
+.edit table { width: 100%; max-width: 100%; }
+@media only screen and (max-width: 1200px) { .edit { padding: 0 10px; } }
+
+body img { display: block; }

@@ -1,0 +1,42 @@
+//This is sass file
+
+=bg($img, $pos-x, $pos-y, $rep)
+	background-image: url("../images/#{$img}")
+	background-position: $pos-x $pos-y
+	background-repeat: $rep
+
+=link-color ($a-text,$a-hover)
+	&:hover
+		color: $a-hover
+
+=rwd($point)
+	@media only screen and (max-width: $point)
+		@content
+
+
+=calc($property, $expression)
+	#{$property}: -moz-calc(#{$expression})
+	#{$property}: -webkit-calc(#{$expression})
+	#{$property}: calc(#{$expression})
+
+
+=stroke($s-width, $color)
+	$s-width: $s-width
+	$shadow: 0 0 0 transparent
+	$i: 0
+	$w: 1
+	@while ($s-width > $i)
+		$i: $i + 1
+		$j: 0
+		$w: $w + 2
+		@for $r from 1 through $w
+			@for $c from 1 through $w
+				$x: $c - ceil($w / 2)
+				$y: $r - ceil($w / 2)
+				$shadow: #{$shadow}, #{$x}px #{$y}px 0 $color
+	text-shadow: $shadow
+
+//Animate Mixin Plugin
+=animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
+	+experimental(animation, $name $duration $delay $function $mode)
+

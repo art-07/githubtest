@@ -1,0 +1,44 @@
+//This is sass file
+body
+	font-family: $text-family
+	color: $text-color
+	background-color: #fff
+	line-height: $line-height
+	font-size: 18px
+	position: relative
+	-webkit-text-size-adjust: none
+a
+	color: $text-color
+	text-decoration: none
+	&:hover
+		color: $hover-color
+		text-decoration: none
+.hide
+	display: none
+.clean
+	clear: both
+	line-height:  0
+	height: 0
+.left
+	float: left
+.right
+	float: right
+.wrapper
+	width: 100%
+	max-width: $width-wrap
+	margin: 0 auto
+	position: relative
+.red
+	color: $red
+.green
+	color: #008d03
+.edit
+	padding: 20px 15px
+	img,iframe
+		max-width: 100%
+		height: auto
+	table
+		width: 100%
+		max-width: 100%
+	+rwd($width-wrap)
+		padding: 0 10px
