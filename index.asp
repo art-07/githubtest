@@ -26,6 +26,15 @@
 	<header>
 		<div class="test"></div>
 	</header>
+	<footer>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</footer>
 </div>
 </body>
 </html>
